@@ -1,0 +1,16 @@
+.myHeaderText {
+	display: block;
+	width: 100%;
+}
+
+.myCarousel {
+	width: 600px;
+	top: 200px;
+}
+
+@media screen and (min-width: 768px) {
+	.myCarousel {
+		width: 600px;
+		top: 40px;
+	}
+}
