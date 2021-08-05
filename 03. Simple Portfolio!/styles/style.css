@@ -104,3 +104,72 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* REUSABLE CSS CLASSES */
+.section {
+  padding: 32px 0 64px;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+}
+
+.section_subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+/* NAVIGATION CSS */
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo,
+.nav_toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav_logo:hover{
+  color: var(--first-color);
+}
+
+.nav_toggle{
+  font-size: 17.6px;
+  cursor: pointer;
+}
+
+.nav_toggle:hover{
+  color: var(--first-color);
+}
