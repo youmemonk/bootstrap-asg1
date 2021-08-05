@@ -146,7 +146,7 @@ img {
   background-color: var(--body-color);
 }
 
-/* NAVIGATION CSS */
+/* NAVIGATION MENU */
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -161,15 +161,69 @@ img {
   font-weight: var(--font-medium);
 }
 
-.nav_logo:hover{
+.nav_logo:hover {
   color: var(--first-color);
 }
 
-.nav_toggle{
+.nav_toggle {
   font-size: 17.6px;
   cursor: pointer;
 }
 
-.nav_toggle:hover{
+.nav_toggle:hover {
   color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav_menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0%;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 32px 24px 64px;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 24px 24px 0 0;
+    transition: 0.3s;
+  }
+}
+
+.nav_list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav_link:hover {
+  color: var(--first-color);
+}
+
+.nav_icon{
+  font-size: 19.2px;
+}
+
+.nav_close{
+  position: absolute;
+  right: 20.8px;
+  bottom: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav_close:hover{
+  color: var(--first-color-alt);
+}
+
+/* show menu */
+.show-menu{
+  bottom: 0%;
 }
