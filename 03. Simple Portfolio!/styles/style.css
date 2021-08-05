@@ -1,0 +1,14 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  --header-height: 3rem;
+
+  /* COLOURS */
+  /* Change Favourite Colour */
+
+  /* HLS Colour mode */
+  --first-color: hsl(250, 69%, 61%);
+  --first-color-second: ;
+}
