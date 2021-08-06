@@ -278,12 +278,12 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
-.home_desription {
+.home_description {
   margin-bottom: var(--mb-2);
 }
 
 .home_scroll {
-  /* display: none; */
+  display: none;
 }
 
 .home_scroll-button {
@@ -299,13 +299,38 @@ img {
   font-size: 32px;
 }
 
-.home_scroll-name{
+.home_scroll-name {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
 }
 
-.home_scroll-arrow{
+.home_scroll-arrow {
   font-size: 20px;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button-icon{
+  font-size: 20px;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button-flex{
+  display: inline-flex;
+  align-items: center;
 }
