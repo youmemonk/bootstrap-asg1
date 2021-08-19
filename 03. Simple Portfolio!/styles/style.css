@@ -627,3 +627,18 @@ img {
 .qualification_active[data-content]{
   display: block;
 }
+
+/* EMOJI CHANGE */
+.emoji{
+  /* padding: 32px; */
+  font-size: var(--smaller-font-size);
+  transform: 0.2s;
+}
+
+.red_heart:before{
+  content: '❤️';
+}
+
+.red_heart:hover:before{
+  content: '💚';
+}
