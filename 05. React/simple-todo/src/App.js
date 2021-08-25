@@ -27,6 +27,18 @@ class App extends React.Component {
       };
     });
   }
+  
+
+  // handleChange() {
+  //   this.setState((prevState) => {
+  //     const newlog = prevState.isLogged;
+  //     newlog: !newlog;
+
+  //     return {
+  //       isLogged: newlog,
+  //     };
+  //   });
+  // }
 
   render() {
     const todoItems = this.state.todos.map((item) => (
