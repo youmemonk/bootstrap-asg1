@@ -12,7 +12,7 @@ let telephoneNumber = 19295265368,
     OutboundNumber = 917021223772,
     callType = 0; // 0 - inbound , 1 - outbound
 
-if (callType == 0) {
+if (callType == 0) {  //! outbound
     VoxEngine.addEventListener(AppEvents.CallAlerting, (e) => {
         let call = VoxEngine.callPSTN(e.destination, telephoneNumber);
         VoxEngine.easyProcess(e.call, call);
@@ -20,7 +20,7 @@ if (callType == 0) {
         call.addEventListener(CallEvents.Disconnected, VoxEngine.terminate)
         call.addEventListener(CallEvents.Failed, VoxEngine.terminate)
     });
-} else {
+} else { //! Inbound
     VoxEngine.addEventListener(AppEvents.Started, (e) => {
         let call = VoxEngine.callPSTN(OutboundNumber, telephoneNumber)
         call.addEventListener(CallEvents.Connected, onCallConnected)
