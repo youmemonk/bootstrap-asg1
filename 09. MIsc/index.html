@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+        <h1>Exploring FIFA World Cup Statistics</h1>
+    </header>
+
+    <div id="bar-chart" class="view">
+        <h2 class="">Bar Chart</h2>
+        <div id="plot-selector">
+            <label>Plot:</label>
+            <select id="dataset" onchange="chooseData()">
+                <option selected value="attendance">Attendance</option>
+                <option value="teams">Teams</option>
+                <option value="matches">Matches</option>
+                <option value="goals">Goals</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="container" style="width:100%;max-width:900px;"></div>
+
+    <script>
+        var attendance = [32808, 21352, 20872, 47511, 29561, 23423, 23423, 27911, 48847, 50124, 49098, 40678, 40571,
+            46039, 48388, 68991, 43517, 42268, 52491, 49669, 52918
+        ]
+
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("container", {
+                animationEnabled: true,
+                theme: "light1",
+                title: {
+                    text: ""
+                },
+
+                axisY: {
+                    title: "Attendance"
+                },
+                data: [{
+                    type: "column",
+                    showInLegend: true,
+                    legendMarkerColor: "grey",
+                    legendText: "Years",
+                    // dataPoints: [{
+                    //         y: 32808,
+                    //         label: "1930"
+                    //     },
+                    //     {
+                    //         y: 21352,
+                    //         label: "1934"
+                    //     },
+                    //     {
+                    //         y: 20872,
+                    //         label: "1938"
+                    //     },
+                    //     {
+                    //         y: 47511,
+                    //         label: "1950"
+                    //     },
+                    //     {
+                    //         y: 29561,
+                    //         label: "1954"
+                    //     },
+                    //     {
+                    //         y: 23423,
+                    //         label: "1958"
+                    //     },
+                    //     {
+                    //         y: 27911,
+                    //         label: "1962"
+                    //     },
+                    //     {
+                    //         y: 48847,
+                    //         label: "1966"
+                    //     },
+                    //     {
+                    //         y: 50124,
+                    //         label: "1970"
+                    //     },
+                    //     {
+                    //         y: 49098,
+                    //         label: "1974"
+                    //     },
+                    //     {
+                    //         y: 40678,
+                    //         label: "1978"
+                    //     },
+                    //     {
+                    //         y: 40571,
+                    //         label: "1982"
+                    //     },
+                    //     {
+                    //         y: 46039,
+                    //         label: "1986"
+                    //     },
+                    //     {
+                    //         y: 48388,
+                    //         label: "1990"
+                    //     },
+                    //     {
+                    //         y: 68991,
+                    //         label: "1994"
+                    //     },
+                    //     {
+                    //         y: 43517,
+                    //         label: "1998"
+                    //     },
+                    //     {
+                    //         y: 42268,
+                    //         label: "2002"
+                    //     },
+                    //     {
+                    //         y: 52491,
+                    //         label: "2006"
+                    //     },
+                    //     {
+                    //         y: 49669,
+                    //         label: "2010"
+                    //     },
+                    //     {
+                    //         y: 52918,
+                    //         label: "2014"
+                    //     }
+                    // ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+</body>
+
+</html>
